@@ -1,19 +1,64 @@
-Apresentação e Artigo
+Previsão de Probabilidade de Diabetes em Estágio Inicial usando Técnicas de Mineração de Dados
 
-- O arquivo Apresentação Trabalho Final TP555.pdf tem a apresentação feita em sala de aula.
-- Relatório da pesquisa (artigo): Previsao_de_probabilidade_de_diabetes_em_estagio_inicial_usando_tecnicas_de_mineracao_de_dados-Relatorio.pdf
+Este projeto aborda a previsão de probabilidade de diabetes em estágio inicial utilizando técnicas de mineração de dados e diferentes algoritmos de aprendizado de máquina. Ele inclui tanto os códigos para reproduzir os resultados apresentados quanto a aplicação desenvolvida para demonstração.
+Estrutura do Projeto
+Diretórios e Arquivos
+1. Apresentação e Relatório
 
-Resultados
+    Apresentação Trabalho Final TP555.pdf: Apresentação realizada em sala de aula.
+    Previsao_de_probabilidade_de_diabetes_em_estagio_inicial_usando_tecnicas_de_mineracao_de_dados-Relatorio.pdf: Relatório do trabalho, em formato de artigo.
 
-O diretório codigos tem os códigos da API apresentada em sala:
+2. Diretório codigos
 
-- diabetes_rf_model.pkl arquivo com o modelo treinado com Random Forests
-- diabetes_rf_model_neuralnetfastai.pkl arquivo com o modelo treinado com o Neural Net Fast AI
-- index.html (frontend) interface gráfica (formulário)
-- styles.css arquivo de estilos utilizado pela interface gráfica
-- predict_app.py (backend) arquivo que contém a lógica para utilizar tanto o modelo treinado com Random Forest quanto com Neural Net Fast AI.
-- teste_predict_api.py arquivo (backend) que contém a lógica para utilizar o modelo treinado com Random Forest.
+Contém os arquivos da API desenvolvida para a demonstração prática:
 
-Para rodar a API, basta executar o código predict_app.py em um ambiente python 3.8 (versão utilizada no meu experimento). Depois basta abrir o arquivo index.html para utilizar o aplicativo. Para tudo funcionar corretamente, todos os arquivos devem estar no mesmo diretório.
+    diabetes_rf_model.pkl: Modelo treinado utilizando Random Forests.
+    diabetes_rf_model_neuralnetfastai.pkl: Modelo treinado utilizando Redes Neurais com a biblioteca FastAI.
+    index.html: Interface gráfica do usuário (frontend).
+    styles.css: Arquivo de estilos para a interface gráfica.
+    predict_app.py: Lógica do backend que utiliza os modelos treinados (Random Forests e Neural Net FastAI) para fazer previsões.
+    teste_predict_api.py: Código backend para testar o modelo treinado com Random Forests.
 
-O diretório reproducao_artigo tem os códigos utilizados pela equipe que desenvolveu o trabalho que inspirou a pesquisa apresentada em sala (Diabetes Risk Prediction.ipynb). Além disso, neste diretório estão os códigos que utilizei com o autoGluon para explorar diversos modelos a fim de encontrar um melhor que a Floresta Aleatória (Encontrando o Melhor algoritmo com AutoGluon.ipynb). Além disso, é neste diretório que está o código que utilizei para treinar o modelo que eu uso no backend da API (Treinando o modelo para usar no java.ipynb). Por fim, este diretório também contém o arquivo que utilizei para treinar o modelo de Neural Net Fast AI (ModeloComNeural.ipynb).
+Como executar a API
+
+    Certifique-se de ter o Python 3.8 instalado no ambiente.
+    Coloque todos os arquivos do diretório codigos no mesmo local.
+    Execute o arquivo predict_app.py:
+
+    python predict_app.py
+
+    Abra o arquivo index.html no navegador para acessar a interface gráfica.
+
+3. Diretório reproducao_artigo
+
+Inclui os códigos utilizados para explorar modelos e reproduzir os resultados da pesquisa:
+
+    Diabetes Risk Prediction.ipynb: Código original utilizado pelos autores do artigo que inspirou este trabalho.
+    Encontrando o Melhor algoritmo com AutoGluon.ipynb: Exploração de diferentes modelos com AutoGluon para identificar o melhor desempenho em comparação ao Random Forest.
+    Treinando o modelo para usar no java.ipynb: Código usado para treinar o modelo aplicado no backend da API.
+    ModeloComNeural.ipynb: Código para treinar o modelo com Redes Neurais utilizando a biblioteca FastAI.
+
+Objetivos do Projeto
+
+    Explorar diferentes algoritmos de aprendizado de máquina para prever a probabilidade de diabetes em estágio inicial.
+    Desenvolver uma API funcional, com frontend e backend, para realizar previsões em tempo real.
+    Reproduzir os resultados do trabalho que inspirou esta pesquisa, garantindo reprodutibilidade e validação científica.
+
+Requisitos
+
+    Python 3.8 (para execução do backend)
+    Bibliotecas necessárias: Listadas em cada notebook ou arquivo de código, incluindo:
+        FastAI
+        AutoGluon
+        Flask (para o backend da API)
+
+Como Contribuir
+
+Se você deseja contribuir para este projeto:
+
+    Faça um fork do repositório.
+    Crie uma branch para suas alterações:
+
+git checkout -b minha-feature
+
+Submeta suas alterações por meio de um pull request.
