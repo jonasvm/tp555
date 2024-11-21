@@ -135,52 +135,46 @@
 
 <script>
   document.getElementById("diabetesForm").addEventListener("submit", function(event) {
-    event.preventDefault();  // Previne o comportamento padrão de envio do formulário
+    event.preventDefault();  
 
-    // Cria um objeto para os dados do formulário com as chaves exatamente como esperadas
     const data = {
       "Age": document.getElementById("age").value,
       "Gender": document.getElementById("gender").value,
       "Polyuria": document.getElementById("polyuria").value,
       "Polydipsia": document.getElementById("polydipsia").value,
-      "sudden weight loss": document.getElementById("sudden_weight_loss").value,  // Mantém o nome exato
+      "sudden weight loss": document.getElementById("sudden_weight_loss").value,  
       "weakness": document.getElementById("weakness").value,
       "Polyphagia": document.getElementById("polyphagia").value,
-      "Genital thrush": document.getElementById("genital_thrush").value,  // Mantém o nome exato
-      "visual blurring": document.getElementById("visual_blurring").value,  // Mantém o nome exato
+      "Genital thrush": document.getElementById("genital_thrush").value,  
+      "visual blurring": document.getElementById("visual_blurring").value, 
       "Itching": document.getElementById("itching").value,
       "Irritability": document.getElementById("irritability").value,
-      "delayed healing": document.getElementById("delayed_healing").value,  // Mantém o nome exato
-      "partial paresis": document.getElementById("partial_paresis").value,  // Mantém o nome exato
-      "muscle stiffness": document.getElementById("muscle_stiffness").value,  // Mantém o nome exato
+      "delayed healing": document.getElementById("delayed_healing").value,  
+      "partial paresis": document.getElementById("partial_paresis").value,  
+      "muscle stiffness": document.getElementById("muscle_stiffness").value, 
       "Alopecia": document.getElementById("alopecia").value,
       "Obesity": document.getElementById("obesity").value
     };
 
-    // Log para verificar os dados antes de enviar
     console.log("Dados enviados para a API:", JSON.stringify(data));
 
-    // Envia os dados para a API usando fetch
-    fetch('http://localhost:5000/predict', {  // Substitua pela URL correta da sua API
+    fetch('http://localhost:5000/predict', {  
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data)  // Passa os dados no formato JSON
+      body: JSON.stringify(data)  
     })
     .then(response => response.json())
     .then(result => {
-      // Exibe o resultado no console para diagnóstico
       console.log('Resultado da API:', result);
 
-      // Verifica o valor de "prediction" e exibe a mensagem correspondente
       if (result.prediction === "Positive") {
         document.getElementById('resultText').textContent = "A previsão do modelo é: Diabetes";
       } else {
         document.getElementById('resultText').textContent = "A previsão do modelo é: Sem Diabetes";
       }
 
-      // Exibe o resultado na tela
       document.getElementById('result').style.display = 'block';
     })
     .catch(error => {
