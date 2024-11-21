@@ -1,6 +1,6 @@
 # Previsão de Probabilidade de Diabetes em Estágio Inicial usando Técnicas de Mineração de Dados
 
-Este projeto aborda a previsão de probabilidade de diabetes em estágio inicial utilizando técnicas de mineração de dados e diferentes algoritmos de aprendizado de máquina. Ele inclui tanto os códigos para reproduzir os resultados apresentados quanto a aplicação desenvolvida para demonstração.
+Este projeto aborda a previsão de probabilidade de diabetes em estágio inicial utilizando técnicas de mineração de dados e diferentes algoritmos de aprendizado de máquina. Ele inclui tanto os códigos para reproduzir os resultados do trabalho "Likelihood Prediction of Diabetes at Early Stage Using Data Mining Techniques" apresentados em sala de aula, quanto a aplicação desenvolvida para demonstração.
 Estrutura do Projeto
 Diretórios e Arquivos
 1. Apresentação e Relatório
