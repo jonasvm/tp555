@@ -22,28 +22,20 @@ Contém os arquivos da API desenvolvida para a demonstração prática:
 
 #### Como executar a API
 
-    Certifique-se de ter o Python 3.8 instalado no ambiente.
-    Coloque todos os arquivos do diretório codigos no mesmo local.
-    Execute o arquivo predict_app.py:
+- Certifique-se de ter o Python 3.8 instalado no ambiente.
+- Coloque todos os arquivos do diretório codigos no mesmo local.
+- Execute o arquivo predict_app.py:
 
     python predict_app.py
-
-    Abra o arquivo index.html no navegador para acessar a interface gráfica.
 
 ### 3. Diretório reproducao_artigo
 
 Inclui os códigos utilizados para explorar modelos e reproduzir os resultados da pesquisa:
 
-    Diabetes Risk Prediction.ipynb: Código original utilizado pelos autores do artigo que inspirou este trabalho.
-    Encontrando o Melhor algoritmo com AutoGluon.ipynb: Exploração de diferentes modelos com AutoGluon para identificar o melhor desempenho em comparação ao Random Forest.
-    Treinando o modelo para usar no java.ipynb: Código usado para treinar o modelo aplicado no backend da API.
-    ModeloComNeural.ipynb: Código para treinar o modelo com Redes Neurais utilizando a biblioteca FastAI.
-
-### Objetivos do Projeto
-
-    Explorar diferentes algoritmos de aprendizado de máquina para prever a probabilidade de diabetes em estágio inicial.
-    Desenvolver uma API funcional, com frontend e backend, para realizar previsões em tempo real.
-    Reproduzir os resultados do trabalho que inspirou esta pesquisa, garantindo reprodutibilidade e validação científica.
+- Diabetes Risk Prediction.ipynb: Código original utilizado pelos autores do artigo que inspirou este trabalho.
+- Encontrando o Melhor algoritmo com AutoGluon.ipynb: Exploração de diferentes modelos com AutoGluon para identificar o melhor desempenho em comparação ao Random Forest.
+- Treinando o modelo para usar no java.ipynb: Código usado para treinar o modelo aplicado no backend da API.
+- ModeloComNeural.ipynb: Código para treinar o modelo com Redes Neurais utilizando a biblioteca FastAI.
 
 ### Requisitos
 
