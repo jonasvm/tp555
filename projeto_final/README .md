@@ -1,7 +1,7 @@
 Apresentação e Artigo
 
 - O arquivo Apresentação Trabalho Final TP555.pdf tem a apresentação feita em sala de aula.
-- Relatório da pesquisa (artigo): projeto_final/Previsao_de_probabilidade_de_diabetes_em_estagio_inicial_usando_tecnicas_de_mineracao_de_dados-Relatorio.pdf
+- Relatório da pesquisa (artigo): Previsao_de_probabilidade_de_diabetes_em_estagio_inicial_usando_tecnicas_de_mineracao_de_dados-Relatorio.pdf
 
 Resultados
 
