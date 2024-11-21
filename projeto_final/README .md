@@ -6,8 +6,8 @@ Este projeto aborda a previsão de probabilidade de diabetes em estágio inicial
 
 ### 1. Apresentação e Relatório
 
-    Apresentação Trabalho Final TP555.pdf: Apresentação realizada em sala de aula.
-    Previsao_de_probabilidade_de_diabetes_em_estagio_inicial_usando_tecnicas_de_mineracao_de_dados-Relatorio.pdf: Relatório do trabalho, em formato de artigo.
+- Apresentação Trabalho Final TP555.pdf: Apresentação realizada em sala de aula.
+- Previsao_de_probabilidade_de_diabetes_em_estagio_inicial_usando_tecnicas_de_mineracao_de_dados-Relatorio.pdf: Relatório do trabalho, em formato de artigo.
 
 ### 2. Diretório codigos
 
