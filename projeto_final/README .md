@@ -13,12 +13,12 @@ Este projeto aborda a previsão de probabilidade de diabetes em estágio inicial
 
 Contém os arquivos da API desenvolvida para a demonstração prática:
 
-    diabetes_rf_model.pkl: Modelo treinado utilizando Random Forests.
-    diabetes_rf_model_neuralnetfastai.pkl: Modelo treinado utilizando Redes Neurais com a biblioteca FastAI.
-    index.html: Interface gráfica do usuário (frontend).
-    styles.css: Arquivo de estilos para a interface gráfica.
-    predict_app.py: Lógica do backend que utiliza os modelos treinados (Random Forests e Neural Net FastAI) para fazer previsões.
-    teste_predict_api.py: Código backend para testar o modelo treinado com Random Forests.
+- diabetes_rf_model.pkl: Modelo treinado utilizando Random Forests.
+- diabetes_rf_model_neuralnetfastai.pkl: Modelo treinado utilizando Redes Neurais com a biblioteca FastAI.
+- index.html: Interface gráfica do usuário (frontend).
+- styles.css: Arquivo de estilos para a interface gráfica.
+- predict_app.py: Lógica do backend que utiliza os modelos treinados (Random Forests e Neural Net FastAI) para fazer previsões.
+- teste_predict_api.py: Código backend para testar o modelo treinado com Random Forests.
 
 #### Como executar a API
 
