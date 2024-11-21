@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário de Diagnóstico de Diabetes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Questionário de Diagnóstico de Diabetes</h1>
+    
+    <form id="diabetesForm">
+      <div class="form-row">
+        <div class="form-column">
+          <label for="age">Idade:</label>
+          <input type="number" id="age" name="age" min="0" placeholder="Ex: 50" required>
+
+          <label for="gender">Gênero:</label>
+          <select id="gender" name="gender" required>
+            <option value="1">Masculino</option>
+            <option value="0">Feminino</option>
+          </select>
+
+          <label for="polyuria">Poliúria (Urina excessiva):</label>
+          <select id="polyuria" name="polyuria" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="form-column">
+          <label for="polydipsia">Polidipsia (Sede excessiva):</label>
+          <select id="polydipsia" name="polydipsia" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+
+          <label for="sudden_weight_loss">Perda de peso súbita:</label>
+          <select id="sudden_weight_loss" name="sudden_weight_loss" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+
+          <label for="weakness">Fraqueza:</label>
+          <select id="weakness" name="weakness" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="form-column">
+          <label for="polyphagia">Polifagia (Fome excessiva):</label>
+          <select id="polyphagia" name="polyphagia" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+
+          <label for="genital_thrush">Candidíase genital:</label>
+          <select id="genital_thrush" name="genital_thrush" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+
+          <label for="visual_blurring">Embaçamento visual:</label>
+          <select id="visual_blurring" name="visual_blurring" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="form-column">
+          <label for="itching">Coceira:</label>
+          <select id="itching" name="itching" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+
+          <label for="irritability">Irritabilidade:</label>
+          <select id="irritability" name="irritability" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+
+          <label for="delayed_healing">Cicatrização lenta:</label>
+          <select id="delayed_healing" name="delayed_healing" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-column">
+          <label for="partial_paresis">Paralisia parcial:</label>
+          <select id="partial_paresis" name="partial_paresis" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="form-column">
+          <label for="muscle_stiffness">Rigidez muscular:</label>
+          <select id="muscle_stiffness" name="muscle_stiffness" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="form-column">
+          <label for="alopecia">Alopecia:</label>
+          <select id="alopecia" name="alopecia" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="form-column">
+          <label for="obesity">Obesidade:</label>
+          <select id="obesity" name="obesity" required>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="result" class="result" style="display:none;">
+      <h3>Resultado:</h3>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+<script>
+  document.getElementById("diabetesForm").addEventListener("submit", function(event) {
+    event.preventDefault();  // Previne o comportamento padrão de envio do formulário
+
+    // Cria um objeto para os dados do formulário com as chaves exatamente como esperadas
+    const data = {
+      "Age": document.getElementById("age").value,
+      "Gender": document.getElementById("gender").value,
+      "Polyuria": document.getElementById("polyuria").value,
+      "Polydipsia": document.getElementById("polydipsia").value,
+      "sudden weight loss": document.getElementById("sudden_weight_loss").value,  // Mantém o nome exato
+      "weakness": document.getElementById("weakness").value,
+      "Polyphagia": document.getElementById("polyphagia").value,
+      "Genital thrush": document.getElementById("genital_thrush").value,  // Mantém o nome exato
+      "visual blurring": document.getElementById("visual_blurring").value,  // Mantém o nome exato
+      "Itching": document.getElementById("itching").value,
+      "Irritability": document.getElementById("irritability").value,
+      "delayed healing": document.getElementById("delayed_healing").value,  // Mantém o nome exato
+      "partial paresis": document.getElementById("partial_paresis").value,  // Mantém o nome exato
+      "muscle stiffness": document.getElementById("muscle_stiffness").value,  // Mantém o nome exato
+      "Alopecia": document.getElementById("alopecia").value,
+      "Obesity": document.getElementById("obesity").value
+    };
+
+    // Log para verificar os dados antes de enviar
+    console.log("Dados enviados para a API:", JSON.stringify(data));
+
+    // Envia os dados para a API usando fetch
+    fetch('http://localhost:5000/predict', {  // Substitua pela URL correta da sua API
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)  // Passa os dados no formato JSON
+    })
+    .then(response => response.json())
+    .then(result => {
+      // Exibe o resultado no console para diagnóstico
+      console.log('Resultado da API:', result);
+
+      // Verifica o valor de "prediction" e exibe a mensagem correspondente
+      if (result.prediction === "Positive") {
+        document.getElementById('resultText').textContent = "A previsão do modelo é: Diabetes";
+      } else {
+        document.getElementById('resultText').textContent = "A previsão do modelo é: Sem Diabetes";
+      }
+
+      // Exibe o resultado na tela
+      document.getElementById('result').style.display = 'block';
+    })
+    .catch(error => {
+      console.error('Erro:', error);
+      document.getElementById('resultText').textContent = 'Erro ao enviar os dados. Tente novamente.';
+      document.getElementById('result').style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
