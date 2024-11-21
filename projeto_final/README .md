@@ -42,7 +42,10 @@ Inclui os códigos utilizados para explorar modelos e reproduzir os resultados d
 ### Requisitos
 
 - Python 3.8 (para execução do backend)
-- Bibliotecas necessárias: Listadas em cada notebook ou arquivo de código, incluindo:
--- FastAI
--- AutoGluon
--- Flask (para o backend da API)
+
+Bibliotecas necessárias: Listadas em cada notebook ou arquivo de código, incluindo:
+- FastAI
+- Joblib
+- AutoGluon
+- Flask (para o backend da API)
+- Cors
