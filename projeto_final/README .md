@@ -26,7 +26,9 @@ Contém os arquivos da API desenvolvida para a demonstração prática:
 - Coloque todos os arquivos do diretório codigos no mesmo local.
 - Execute o arquivo predict_app.py:
 
+```
     python predict_app.py
+```
 
 ### 3. Diretório reproducao_artigo
 
@@ -39,8 +41,8 @@ Inclui os códigos utilizados para explorar modelos e reproduzir os resultados d
 
 ### Requisitos
 
-    Python 3.8 (para execução do backend)
-    Bibliotecas necessárias: Listadas em cada notebook ou arquivo de código, incluindo:
-        FastAI
-        AutoGluon
-        Flask (para o backend da API)
+- Python 3.8 (para execução do backend)
+- Bibliotecas necessárias: Listadas em cada notebook ou arquivo de código, incluindo:
+-     FastAI
+-     AutoGluon
+-     Flask (para o backend da API)
